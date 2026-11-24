@@ -2,12 +2,15 @@
 
 @section("content")
 
-<h1>Mes albums</h1>
+<h1>Les albums</h1>
 
 <ul>
     @foreach($albums as $album)
         <li>
-            {{ $album->titre }} (créé le {{ $album->creation }})
+            <a href="{{ route('detailalbum', ['id' => $album->id]) }}">
+                {{ $album->titre }}
+            </a>
+            (créé le {{ $album->creation }})
         </li>
     @endforeach
 </ul>

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Mon Album</title>
+    <title>Album photo</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
 
 <body>
     <nav>
-        <span class="logo">Mon Album</span>
-        <div class="liens">
-            <a href="{{ route('albums') }}">Albums</a>
-        </div>
+        <a href="{{ route('index') }}">Accueil</a>
+        <a href="{{ route('albums') }}">Les albums</a>
     </nav>
 
     <main>
